@@ -1,7 +1,7 @@
 import { ApolloServer, BaseContext } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
 import { books, reviews, authors } from "./mockData.js";
-import { Resolvers, Book, BookInput } from "./generated/graphql";
+import { Resolvers, Book } from "./generated/graphql";
 import { readFileSync } from "fs";
 import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
